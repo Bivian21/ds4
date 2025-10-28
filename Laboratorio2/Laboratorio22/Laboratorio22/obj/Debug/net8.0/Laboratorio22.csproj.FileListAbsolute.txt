@@ -1,0 +1,15 @@
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\bin\Debug\net8.0\Laboratorio22.exe
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\bin\Debug\net8.0\Laboratorio22.deps.json
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\bin\Debug\net8.0\Laboratorio22.runtimeconfig.json
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\bin\Debug\net8.0\Laboratorio22.dll
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\bin\Debug\net8.0\Laboratorio22.pdb
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\obj\Debug\net8.0\Laboratorio22.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\obj\Debug\net8.0\Laboratorio22.AssemblyInfoInputs.cache
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\obj\Debug\net8.0\Laboratorio22.AssemblyInfo.cs
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\obj\Debug\net8.0\Laboratorio22.csproj.CoreCompileInputs.cache
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\obj\Debug\net8.0\Laboratorio22.sourcelink.json
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\obj\Debug\net8.0\Laboratorio22.dll
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\obj\Debug\net8.0\refint\Laboratorio22.dll
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\obj\Debug\net8.0\Laboratorio22.pdb
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\obj\Debug\net8.0\Laboratorio22.genruntimeconfig.cache
+C:\Users\Personal\source\repos\ds4\Laboratorio22\Laboratorio22\obj\Debug\net8.0\ref\Laboratorio22.dll
