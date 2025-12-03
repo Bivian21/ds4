@@ -1,0 +1,15 @@
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\bin\Debug\net8.0\Laboratorio 9.3.exe
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\bin\Debug\net8.0\Laboratorio 9.3.deps.json
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\bin\Debug\net8.0\Laboratorio 9.3.runtimeconfig.json
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\bin\Debug\net8.0\Laboratorio 9.3.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\bin\Debug\net8.0\Laboratorio 9.3.pdb
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\obj\Debug\net8.0\Laboratorio 9.3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\obj\Debug\net8.0\Laboratorio 9.3.AssemblyInfoInputs.cache
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\obj\Debug\net8.0\Laboratorio 9.3.AssemblyInfo.cs
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\obj\Debug\net8.0\Laboratorio 9.3.csproj.CoreCompileInputs.cache
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\obj\Debug\net8.0\Laboratorio 9.3.sourcelink.json
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\obj\Debug\net8.0\Laboratorio 9.3.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\obj\Debug\net8.0\refint\Laboratorio 9.3.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\obj\Debug\net8.0\Laboratorio 9.3.pdb
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\obj\Debug\net8.0\Laboratorio 9.3.genruntimeconfig.cache
+C:\Users\Personal\Downloads\ds4-Laboratorios m\Laboratorio 09\Laboratorio 9.3\obj\Debug\net8.0\ref\Laboratorio 9.3.dll
