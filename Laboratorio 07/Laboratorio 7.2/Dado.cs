@@ -1,0 +1,28 @@
+﻿using System;
+
+
+class Dado
+{
+    private int valor;
+    private static Random aleatorio;
+
+    public Dado()
+    {
+        aleatorio = new Random();
+    }
+
+    public void Tirar()
+    {
+        valor = aleatorio.Next(1, 7);
+    }
+
+    public void Imprimir()
+    {
+        Console.WriteLine("El Valor del dado: " + valor);
+    }
+
+    public int RetornarValor()
+    {
+        return valor;
+    }
+}
