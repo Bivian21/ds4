@@ -1,0 +1,54 @@
+@model PasaportesBP.Models.Pasaporte
+
+@{
+    ViewData["Title"] = "Editar Pasaporte";
+    var solicitantes = (IEnumerable<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>)ViewData["SolicitanteID"];
+    var estados = (IEnumerable<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>)ViewData["Estados"];
+}
+
+<h1>Editar Pasaporte</h1>
+
+<form asp-action="Editar" method="post">
+    <input type="hidden" asp-for="PasaporteID" />
+    <div class="mb-3">
+        <label asp-for="NumeroPasaporte" class="form-label"></label>
+        <input asp-for="NumeroPasaporte" class="form-control" />
+        <span asp-validation-for="NumeroPasaporte" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Solicitante</label>
+        <select asp-for="SolicitanteID" class="form-select" asp-items="solicitantes">
+            <option value="">-- Seleccione --</option>
+        </select>
+        <span asp-validation-for="SolicitanteID" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="FechaSolicitud" class="form-label"></label>
+        <input asp-for="FechaSolicitud" type="date" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="FechaAprobacion" class="form-label"></label>
+        <input asp-for="FechaAprobacion" type="date" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="FechaEntrega" class="form-label"></label>
+        <input asp-for="FechaEntrega" type="date" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Estado" class="form-label"></label>
+        <select asp-for="Estado" class="form-select" asp-items="estados"></select>
+        <span asp-validation-for="Estado" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+    <a asp-action="Index" class="btn btn-secondary">Volver</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

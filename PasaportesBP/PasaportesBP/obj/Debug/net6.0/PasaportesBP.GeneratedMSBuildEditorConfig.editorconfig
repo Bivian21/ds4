@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PasaportesBP
+build_property.RootNamespace = PasaportesBP
+build_property.ProjectDir = C:\Users\Personal\Documents\PasaportesBP\PasaportesBP\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Personal\Documents\PasaportesBP\PasaportesBP
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 6.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Pasaporte/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzYXBvcnRlXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Pasaporte/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzYXBvcnRlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Pasaporte/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzYXBvcnRlXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Pasaporte/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzYXBvcnRlXEVsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Pasaporte/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzYXBvcnRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Solicitante/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdGFudGVcQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Solicitante/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdGFudGVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Solicitante/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdGFudGVcRWRpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Solicitante/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdGFudGVcRWxpbWluYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/Solicitante/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29saWNpdGFudGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Personal/Documents/PasaportesBP/PasaportesBP/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

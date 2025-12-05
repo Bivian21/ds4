@@ -1,0 +1,43 @@
+@model IEnumerable<PasaportesBP.Models.Pasaporte>
+
+@{
+    ViewData["Title"] = "Pasaportes";
+}
+
+<h1>Pasaportes</h1>
+
+<p>
+    <a asp-action="Crear" class="btn btn-primary">Nuevo Pasaporte</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Número</th>
+            <th>Solicitante</th>
+            <th>Estado</th>
+            <th>Fecha Solicitud</th>
+            <th>Fecha Aprobación</th>
+            <th>Fecha Entrega</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.NumeroPasaporte</td>
+            <td>@p.Solicitante?.NombreCompleto</td>
+            <td>@p.Estado</td>
+            <td>@p.FechaSolicitud.ToShortDateString()</td>
+            <td>@(p.FechaAprobacion.HasValue ? p.FechaAprobacion.Value.ToShortDateString() : "-")</td>
+            <td>@(p.FechaEntrega.HasValue ? p.FechaEntrega.Value.ToShortDateString() : "-")</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@p.PasaporteID" class="btn btn-sm btn-info">Detalle</a>
+                <a asp-action="Editar" asp-route-id="@p.PasaporteID" class="btn btn-sm btn-warning">Editar</a>
+                <a asp-action="Eliminar" asp-route-id="@p.PasaporteID" class="btn btn-sm btn-danger">Eliminar</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

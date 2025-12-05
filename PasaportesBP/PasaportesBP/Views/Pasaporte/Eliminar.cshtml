@@ -1,0 +1,22 @@
+@model PasaportesBP.Models.Pasaporte
+
+@{
+    ViewData["Title"] = "Eliminar Pasaporte";
+}
+
+<h1>Eliminar Pasaporte</h1>
+
+<h3>¿Está seguro que desea eliminar este pasaporte?</h3>
+
+<div class="mb-3">
+    <strong>Número:</strong> @Model.NumeroPasaporte
+</div>
+<div class="mb-3">
+    <strong>Solicitante:</strong> @Model.Solicitante?.NombreCompleto
+</div>
+
+<form asp-action="Eliminar" method="post">
+    <input type="hidden" asp-for="PasaporteID" />
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
