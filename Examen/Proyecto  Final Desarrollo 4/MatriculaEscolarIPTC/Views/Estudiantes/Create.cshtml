@@ -1,0 +1,44 @@
+@model Estudiante
+@{
+    ViewData["Title"] = "Nuevo Estudiante";
+    ViewBag.Subtitle = "Crear";
+}
+<div class="card card-soft">
+    <div class="card-body">
+        <form method="post">
+            @Html.AntiForgeryToken()
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <label class="form-label">Cédula</label>
+                    <input class="form-control" asp-for="Cedula" />
+                    <span class="text-danger" asp-validation-for="Cedula"></span>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Nombre completo</label>
+                    <input class="form-control" asp-for="NombreCompleto" />
+                    <span class="text-danger" asp-validation-for="NombreCompleto"></span>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Grado</label>
+                    <input class="form-control" asp-for="Grado" />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Email</label>
+                    <input class="form-control" asp-for="Email" />
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Teléfono</label>
+                    <input class="form-control" asp-for="Telefono" />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Año lectivo</label>
+                    <input class="form-control" asp-for="AnioLectivo" />
+                </div>
+            </div>
+            <div class="mt-3 d-flex gap-2">
+                <button class="btn btn-primary" type="submit">Guardar</button>
+                <a class="btn btn-outline-secondary" asp-action="Index">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+@model Grupo
+@{
+    ViewData["Title"] = "Detalle del Grupo";
+    ViewBag.Subtitle = $"{Model.Grado}-{Model.Seccion} • {Model.Periodo}";
+}
+<div class="row g-3">
+    <div class="col-lg-6">
+        <div class="card card-soft">
+            <div class="card-body">
+                <h5 class="mb-2">Información</h5>
+                <div><b>Materia:</b> @Model.Materia?.Codigo - @Model.Materia?.Nombre</div>
+                <div><b>Profesor:</b> @Model.Profesor?.NombreCompleto</div>
+                <div><b>Cupo:</b> @Model.Cupo</div>
+                <div class="mt-3 d-flex gap-2">
+                    <a class="btn btn-outline-primary btn-sm" asp-controller="Horarios" asp-action="Create" asp-route-grupoId="@Model.Id">+ Agregar horario</a>
+                    <a class="btn btn-outline-secondary btn-sm" asp-controller="Horarios" asp-action="Index" asp-route-grupoId="@Model.Id">Ver horarios</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card card-soft">
+            <div class="card-body">
+                <h5 class="mb-2">Horarios</h5>
+                @if (Model.Horarios?.Any() == true)
+                {
+                    <ul class="mb-0">
+                        @foreach (var h in Model.Horarios.OrderBy(x => x.Dia).ThenBy(x => x.HoraInicio))
+                        {
+                            <li>@h.Dia: @h.HoraInicio - @h.HoraFin (Aula: @h.Aula)</li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <div class="text-muted">Sin horarios registrados.</div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+@model Horario
+@{
+    ViewData["Title"] = "Eliminar Horario";
+    ViewBag.Subtitle = $"ID {Model.Id}";
+}
+<div class="card card-soft">
+    <div class="card-body">
+        <p>¿Seguro que desea eliminar este horario?</p>
+        <ul>
+            <li><b>Grupo:</b> @Model.Grupo?.Grado-@Model.Grupo?.Seccion (@Model.Grupo?.Materia?.Codigo)</li>
+            <li><b>Día:</b> @Model.Dia</li>
+            <li><b>Hora:</b> @Model.HoraInicio - @Model.HoraFin</li>
+            <li><b>Aula:</b> @Model.Aula</li>
+        </ul>
+        <form method="post">
+            @Html.AntiForgeryToken()
+            <button class="btn btn-danger" type="submit">Sí, eliminar</button>
+            <a class="btn btn-outline-secondary" asp-action="Index" asp-route-grupoId="@Model.GrupoId">Cancelar</a>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+@model Horario
+@{
+    ViewData["Title"] = "Nuevo Horario";
+    ViewBag.Subtitle = "Asignación por grupo";
+    var grupos = ViewBag.Grupos as List<Grupo>;
+}
+<div class="card card-soft">
+    <div class="card-body">
+        <form method="post">
+            @Html.AntiForgeryToken()
+            <div class="row g-3">
+                <div class="col-md-12">
+                    <label class="form-label">Grupo</label>
+                    <select class="form-select" asp-for="GrupoId" required>
+                        <option value="">-- Seleccione --</option>
+                        @foreach (var g in grupos!)
+                        {
+                            <option value="@g.Id" selected="@(Model.GrupoId==g.Id)">
+                                @g.Periodo | @g.Grado-@g.Seccion | @g.Materia?.Codigo - @g.Materia?.Nombre | @g.Profesor?.NombreCompleto
+                            </option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Día</label>
+                    <select class="form-select" asp-for="Dia">
+                        @foreach (var d in Enum.GetValues(typeof(DayOfWeek)).Cast<DayOfWeek>())
+                        {
+                            <option value="@d">@d</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Hora inicio</label>
+                    <input class="form-control" asp-for="HoraInicio" type="time" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Hora fin</label>
+                    <input class="form-control" asp-for="HoraFin" type="time" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Aula</label>
+                    <input class="form-control" asp-for="Aula" />
+                </div>
+                <div class="col-12">
+                    <span class="text-danger">@Html.ValidationSummary()</span>
+                </div>
+            </div>
+            <div class="mt-3 d-flex gap-2">
+                <button class="btn btn-primary" type="submit">Guardar</button>
+                <a class="btn btn-outline-secondary" asp-action="Index" asp-route-grupoId="@Model.GrupoId">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>

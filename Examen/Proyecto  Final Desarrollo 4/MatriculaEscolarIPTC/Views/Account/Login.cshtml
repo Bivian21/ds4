@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Iniciar sesión";
+    ViewBag.Subtitle = "Acceso al sistema";
+    Layout = "_Layout";
+}
+<div class="auth-wrap">
+    <div class="card auth-card">
+        <div class="card-body">
+            <h4 class="mb-1">Bienvenido</h4>
+            <div class="text-muted mb-3">Ingrese sus credenciales</div>
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger">@ViewBag.Error</div>
+            }
+
+            <form method="post">
+                @Html.AntiForgeryToken()
+                <div class="mb-3">
+                    <label class="form-label">Email / Usuario</label>
+                    <input class="form-control" name="email" placeholder="admin@iptc.local" required />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" name="password" placeholder="••••••" required />
+                </div>
+                <button class="btn btn-primary w-100" type="submit">Entrar</button>
+
+                <div class="small text-muted mt-3">
+                    Demo: <b>admin@iptc.local</b> / <b>Admin123!</b>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

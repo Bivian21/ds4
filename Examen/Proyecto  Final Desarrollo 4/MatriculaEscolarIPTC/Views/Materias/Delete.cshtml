@@ -1,0 +1,16 @@
+@model Materia
+@{
+    ViewData["Title"] = "Eliminar Materia";
+    ViewBag.Subtitle = Model.Codigo;
+}
+<div class="card card-soft">
+    <div class="card-body">
+        <p>¿Seguro que desea eliminar <b>@Model.Nombre</b> (@Model.Codigo)?</p>
+        <form method="post">
+            @Html.AntiForgeryToken()
+            <button class="btn btn-danger" type="submit">Sí, eliminar</button>
+            <a class="btn btn-outline-secondary" asp-action="Index">Cancelar</a>
+        </form>
+        <div class="text-muted small mt-3">Si la materia está usada en Grupos, SQL Server puede bloquear la eliminación.</div>
+    </div>
+</div>

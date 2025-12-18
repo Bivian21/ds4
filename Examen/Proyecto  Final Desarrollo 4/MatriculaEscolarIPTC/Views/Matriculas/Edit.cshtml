@@ -1,0 +1,101 @@
+@model Matricula
+@{
+    ViewData["Title"] = "Editar Matrícula";
+    ViewBag.Subtitle = $"{Model.Estudiante?.NombreCompleto} • {Model.Periodo}";
+    var grupos = ViewBag.Grupos as List<Grupo>;
+}
+<div class="row g-3">
+    <div class="col-lg-5">
+        <div class="card card-soft">
+            <div class="card-body">
+                <h5 class="mb-2">Datos</h5>
+                <div><b>Estudiante:</b> @Model.Estudiante?.NombreCompleto</div>
+                <div><b>Cédula:</b> @Model.Estudiante?.Cedula</div>
+                <div><b>Grado:</b> @Model.Estudiante?.Grado</div>
+                <div><b>Periodo:</b> @Model.Periodo</div>
+
+                <div class="mt-3 d-flex gap-2">
+                    <a class="btn btn-outline-secondary btn-sm" asp-controller="Pdf" asp-action="Comprobante" asp-route-id="@Model.Id">PDF comprobante</a>
+                    <a class="btn btn-outline-secondary btn-sm" asp-controller="Pdf" asp-action="HistorialSimple" asp-route-estudianteId="@Model.EstudianteId">PDF historial</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-soft mt-3">
+            <div class="card-body">
+                <h5 class="mb-2">Agregar materia (Grupo)</h5>
+
+                <form asp-action="AddGrupo" method="post" class="d-flex gap-2">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="matriculaId" value="@Model.Id" />
+                    <select class="form-select" name="grupoId" required>
+                        <option value="">-- Seleccione un grupo --</option>
+                        @foreach (var g in grupos!)
+                        {
+                            <option value="@g.Id">
+                                @g.Periodo | @g.Grado-@g.Seccion | @g.Materia?.Codigo - @g.Materia?.Nombre | @g.Profesor?.NombreCompleto
+                            </option>
+                        }
+                    </select>
+                    <button class="btn btn-primary" type="submit">Agregar</button>
+                </form>
+
+                <div class="small text-muted mt-2">
+                    El sistema valida choques de horario para el estudiante y no permite cruces.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-7">
+        <div class="card card-soft">
+            <div class="card-body">
+                <h5 class="mb-2">Materias matriculadas</h5>
+
+                @if (Model.Detalles?.Any() == true)
+                {
+                    <div class="table-responsive">
+                        <table class="table table-sm align-middle">
+                            <thead>
+                            <tr>
+                                <th>Materia</th>
+                                <th>Profesor</th>
+                                <th>Sección</th>
+                                <th class="text-end">Acción</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            @foreach (var d in Model.Detalles)
+                            {
+                                <tr>
+                                    <td><b>@d.Grupo?.Materia?.Codigo</b> - @d.Grupo?.Materia?.Nombre</td>
+                                    <td>@d.Grupo?.Profesor?.NombreCompleto</td>
+                                    <td>@d.Grupo?.Grado-@d.Grupo?.Seccion</td>
+                                    <td class="text-end">
+                                        <form asp-action="RemoveDetalle" method="post" class="d-inline">
+                                            @Html.AntiForgeryToken()
+                                            <input type="hidden" name="detalleId" value="@d.Id" />
+                                            <button class="btn btn-sm btn-outline-danger">Quitar</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="text-muted">Aún no hay materias agregadas.</div>
+                }
+            </div>
+        </div>
+
+        <div class="card card-soft mt-3">
+            <div class="card-body">
+                <h5 class="mb-2">Siguiente paso</h5>
+                <p class="mb-0">Cuando tenga todo listo, genere el <b>PDF comprobante</b> para entregar al estudiante.</p>
+            </div>
+        </div>
+    </div>
+</div>

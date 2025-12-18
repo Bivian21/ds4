@@ -1,0 +1,19 @@
+@model Matricula
+@{
+    ViewData["Title"] = "Eliminar Matrícula";
+    ViewBag.Subtitle = Model.Estudiante?.NombreCompleto;
+}
+<div class="card card-soft">
+    <div class="card-body">
+        <p>¿Seguro que desea eliminar esta matrícula?</p>
+        <ul>
+            <li><b>Estudiante:</b> @Model.Estudiante?.NombreCompleto (@Model.Estudiante?.Cedula)</li>
+            <li><b>Periodo:</b> @Model.Periodo</li>
+        </ul>
+        <form method="post">
+            @Html.AntiForgeryToken()
+            <button class="btn btn-danger" type="submit">Sí, eliminar</button>
+            <a class="btn btn-outline-secondary" asp-action="Index">Cancelar</a>
+        </form>
+    </div>
+</div>

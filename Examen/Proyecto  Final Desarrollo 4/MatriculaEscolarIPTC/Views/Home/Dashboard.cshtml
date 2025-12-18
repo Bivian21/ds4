@@ -1,0 +1,74 @@
+@using MatriculaEscolarIPTC.Data
+@inject AppDbContext Db
+
+@{
+    ViewData["Title"] = "Dashboard";
+    ViewBag.Subtitle = "Resumen rápido del sistema";
+    var estudiantes = Db.Estudiantes.Count();
+    var profesores = Db.Profesores.Count();
+    var materias = Db.Materias.Count();
+    var grupos = Db.Grupos.Count();
+    var matriculas = Db.Matriculas.Count();
+}
+<div class="row g-3">
+    <div class="col-md-4">
+        <div class="card card-soft">
+            <div class="card-body">
+                <div class="kpi-title">Estudiantes</div>
+                <div class="kpi-big">@estudiantes</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-soft">
+            <div class="card-body">
+                <div class="kpi-title">Profesores</div>
+                <div class="kpi-big">@profesores</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card card-soft">
+            <div class="card-body">
+                <div class="kpi-title">Materias</div>
+                <div class="kpi-big">@materias</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card card-soft">
+            <div class="card-body">
+                <div class="kpi-title">Grupos/Secciones</div>
+                <div class="kpi-big">@grupos</div>
+                <div class="text-muted small">Materia + Profesor + Grado/Sección</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card card-soft">
+            <div class="card-body">
+                <div class="kpi-title">Matrículas</div>
+                <div class="kpi-big">@matriculas</div>
+                <div class="text-muted small">Con comprobantes PDF</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="card card-soft">
+            <div class="card-body">
+                <h5 class="mb-2">Flujo recomendado</h5>
+                <ol class="mb-0">
+                    <li>Crear Materias y Profesores.</li>
+                    <li>Crear Grupos/Secciones (asignar materia + profesor).</li>
+                    <li>Crear Horarios (validación de choques de profesor/aula).</li>
+                    <li>Crear Estudiantes.</li>
+                    <li>Crear Matrícula y agregar grupos (validación de choque para estudiante).</li>
+                    <li>Generar comprobante PDF.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
