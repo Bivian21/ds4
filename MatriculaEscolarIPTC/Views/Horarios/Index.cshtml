@@ -1,0 +1,47 @@
+@model IEnumerable<Horario>
+@{
+    ViewData["Title"] = "Horarios";
+    ViewBag.Subtitle = "Gestión de horarios (con validación de choques)";
+}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <div class="text-muted small">
+        @if (ViewBag.GrupoId != null) { <span>Filtrado por Grupo ID: <b>@ViewBag.GrupoId</b></span> }
+    </div>
+    <a class="btn btn-primary" asp-action="Create" asp-route-grupoId="@ViewBag.GrupoId">+ Nuevo</a>
+</div>
+
+<div class="card card-soft">
+    <div class="table-responsive">
+        <table class="table table-hover mb-0">
+            <thead>
+            <tr>
+                <th>Grupo</th>
+                <th>Día</th>
+                <th>Inicio</th>
+                <th>Fin</th>
+                <th>Aula</th>
+                <th class="text-end">Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var h in Model)
+            {
+                <tr>
+                    <td>
+                        <span class="badge text-bg-light">@h.Grupo?.Grado-@h.Grupo?.Seccion</span>
+                        <div class="small text-muted">@h.Grupo?.Materia?.Codigo - @h.Grupo?.Profesor?.NombreCompleto</div>
+                    </td>
+                    <td>@h.Dia</td>
+                    <td>@h.HoraInicio</td>
+                    <td>@h.HoraFin</td>
+                    <td>@h.Aula</td>
+                    <td class="text-end">
+                        <a class="btn btn-sm btn-outline-primary" asp-action="Edit" asp-route-id="@h.Id">Editar</a>
+                        <a class="btn btn-sm btn-outline-danger" asp-action="Delete" asp-route-id="@h.Id">Eliminar</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

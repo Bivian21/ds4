@@ -1,0 +1,44 @@
+@model IEnumerable<Estudiante>
+@{
+    ViewData["Title"] = "Estudiantes";
+    ViewBag.Subtitle = "Registro de estudiantes";
+}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <form class="d-flex gap-2" method="get">
+        <input class="form-control" name="q" value="@ViewBag.Q" placeholder="Buscar por cédula o nombre..." />
+        <button class="btn btn-outline-secondary">Buscar</button>
+    </form>
+    <a class="btn btn-primary" asp-action="Create">+ Nuevo</a>
+</div>
+
+<div class="card card-soft">
+    <div class="table-responsive">
+        <table class="table table-hover mb-0">
+            <thead>
+            <tr>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Grado</th>
+                <th>Año lectivo</th>
+                <th class="text-end">Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var e in Model)
+            {
+                <tr>
+                    <td>@e.Cedula</td>
+                    <td>@e.NombreCompleto</td>
+                    <td>@e.Grado</td>
+                    <td>@e.AnioLectivo</td>
+                    <td class="text-end">
+                        <a class="btn btn-sm btn-outline-secondary" asp-controller="Pdf" asp-action="HistorialSimple" asp-route-estudianteId="@e.Id">PDF historial</a>
+                        <a class="btn btn-sm btn-outline-primary" asp-action="Edit" asp-route-id="@e.Id">Editar</a>
+                        <a class="btn btn-sm btn-outline-danger" asp-action="Delete" asp-route-id="@e.Id">Eliminar</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

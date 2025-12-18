@@ -1,0 +1,82 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<MatriculaEscolarIPTC.Models.AppUser> SignInManager
+@inject UserManager<MatriculaEscolarIPTC.Models.AppUser> UserManager
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Matrícula IPTC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar">
+        <div class="brand">
+            <img src="~/img/logo.png" alt="Logo" onerror="this.style.display='none'">
+            <div>
+                <div class="brand-title">Matrícula Escolar</div>
+                <div class="brand-sub">IPTC Colón</div>
+            </div>
+        </div>
+
+        <nav class="nav flex-column mt-3">
+            <a class="nav-link" asp-controller="Home" asp-action="Dashboard">📊 Dashboard</a>
+
+            <div class="nav-section">Gestión</div>
+            <a class="nav-link" asp-controller="Estudiantes" asp-action="Index">👩‍🎓 Estudiantes</a>
+            <a class="nav-link" asp-controller="Profesores" asp-action="Index">👨‍🏫 Profesores</a>
+            <a class="nav-link" asp-controller="Materias" asp-action="Index">📘 Materias</a>
+            <a class="nav-link" asp-controller="Grupos" asp-action="Index">🧩 Grupos/Secciones</a>
+            <a class="nav-link" asp-controller="Horarios" asp-action="Index">🗓️ Horarios</a>
+
+            <div class="nav-section">Matrícula</div>
+            <a class="nav-link" asp-controller="Matriculas" asp-action="Index">✅ Matrículas</a>
+        </nav>
+
+        <div class="sidebar-footer">
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <div class="small text-muted">Sesión: @User.Identity?.Name</div>
+                <a class="btn btn-outline-light btn-sm w-100 mt-2" asp-controller="Account" asp-action="Logout">Cerrar sesión</a>
+            }
+            else
+            {
+                <a class="btn btn-primary btn-sm w-100" asp-controller="Account" asp-action="Login">Iniciar sesión</a>
+            }
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div class="topbar-left">
+                <div class="page-title">@ViewData["Title"]</div>
+                <div class="page-sub">@ViewBag.Subtitle</div>
+            </div>
+            <div class="topbar-right">
+                <span class="badge-soft">ASP.NET Core • SQL Server • PDF</span>
+            </div>
+        </header>
+
+        <section class="content">
+            @await Html.PartialAsync("_Alerts")
+            @RenderBody()
+        </section>
+
+        <footer class="footer">
+            <span>© @DateTime.Now.Year - MatriculaEscolarIPTC</span>
+        </footer>
+    </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+@RenderSection("Scripts", required: false)
+</body>
+</html>

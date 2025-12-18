@@ -1,0 +1,15 @@
+@model Profesor
+@{
+    ViewData["Title"] = "Eliminar Profesor";
+    ViewBag.Subtitle = Model.NombreCompleto;
+}
+<div class="card card-soft">
+    <div class="card-body">
+        <p>¿Seguro que desea eliminar al profesor <b>@Model.NombreCompleto</b> (Cédula: @Model.Cedula)?</p>
+        <form method="post">
+            @Html.AntiForgeryToken()
+            <button class="btn btn-danger" type="submit">Sí, eliminar</button>
+            <a class="btn btn-outline-secondary" asp-action="Index">Cancelar</a>
+        </form>
+    </div>
+</div>

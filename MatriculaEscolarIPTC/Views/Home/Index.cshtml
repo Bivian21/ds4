@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Inicio";
+    Layout = "_Layout";
+}
+<div class="hero">
+    <div class="hero-card">
+        <h1>Sistema Web de Matrícula Escolar</h1>
+        <p class="lead">
+            Matrícula de materias, asignación de profesores y gestión de horarios con generación de comprobantes en PDF.
+        </p>
+        <div class="d-flex gap-2 mt-3">
+            <a class="btn btn-primary" asp-controller="Account" asp-action="Login">Entrar</a>
+            <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Dashboard">Ver Dashboard</a>
+        </div>
+
+        <div class="mt-4 small text-muted">
+            Usuario demo: <b>admin@iptc.local</b> • Clave: <b>Admin123!</b>
+        </div>
+    </div>
+
+    <div class="hero-aside">
+        <div class="kpi">
+            <div class="kpi-title">Arquitectura</div>
+            <div class="kpi-value">Navegador → Servidor Web → SQL Server → PDF</div>
+            <div class="kpi-sub">Basado en el diagrama de arquitectura de alto nivel.</div>
+        </div>
+        <div class="kpi mt-3">
+            <div class="kpi-title">Módulos</div>
+            <div class="kpi-sub">Estudiantes • Profesores • Materias • Grupos • Horarios • Matrícula</div>
+        </div>
+    </div>
+</div>
