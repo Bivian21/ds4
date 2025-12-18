@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="mt-4">
+    <h1>Gestión de Pasaportes</h1>
+    <p class="lead">Sistema web para gestión de solicitantes y pasaportes de la oficina de pasaportes.</p>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Solicitantes</h5>
+                    <p class="card-text">Administre la información de las personas que solicitan pasaporte.</p>
+                    <a asp-controller="Solicitante" asp-action="Index" class="btn btn-primary">Ver Solicitantes</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Pasaportes</h5>
+                    <p class="card-text">Registre y actualice el estado de las solicitudes de pasaporte.</p>
+                    <a asp-controller="Pasaporte" asp-action="Index" class="btn btn-success">Ver Pasaportes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
