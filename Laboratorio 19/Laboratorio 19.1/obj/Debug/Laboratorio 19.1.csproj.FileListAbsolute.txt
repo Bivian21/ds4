@@ -1,0 +1,46 @@
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\Laboratorio 19.1.dll.config
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\Laboratorio 19.1.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\Laboratorio 19.1.pdb
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\Antlr3.Runtime.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\Newtonsoft.Json.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Net.Http.Formatting.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.Helpers.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.Http.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.Http.WebHost.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.Mvc.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.Optimization.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.Razor.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.WebPages.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.WebPages.Razor.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\WebGrease.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\Newtonsoft.Json.xml
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Net.Http.Formatting.xml
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.Helpers.xml
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.Http.xml
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.Http.WebHost.xml
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.Mvc.xml
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.Optimization.xml
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.Razor.xml
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.WebPages.xml
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\System.Web.WebPages.Razor.xml
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\Antlr3.Runtime.pdb
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\es\System.Web.Http.resources.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\es\System.Web.Razor.resources.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\obj\Debug\Laboratorio 19.1.csproj.AssemblyReference.cache
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\obj\Debug\Laboratorio 19.1.csproj.CoreCompileInputs.cache
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\obj\Debug\Laborato.D2711FAF.Up2Date
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\obj\Debug\Laboratorio 19.1.dll
+C:\Users\Personal\Downloads\ds4-Laboratorios (1)\ds4-Laboratorios\Laboratorio 19\Laboratorio 19.1\obj\Debug\Laboratorio 19.1.pdb
